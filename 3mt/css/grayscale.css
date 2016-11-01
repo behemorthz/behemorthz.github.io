@@ -257,16 +257,12 @@ a:focus {
   position: relative;
 }
 
-ul.o-logoes {
+.o-logoes {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
-    display:block;
-}
-
-li.o-logoes{
-  display: inline-block;
-  float: left;
+    display:inline-block;
+    vertical-align: middle;
 }
 
 #map {
