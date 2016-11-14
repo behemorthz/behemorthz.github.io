@@ -250,6 +250,7 @@ a:focus {
   display: block;
   width: 100%;
   height: auto;
+  margin-top: 250px;
 }
 
 
@@ -258,7 +259,6 @@ a:focus {
     padding-left: 0;
     margin-left: 0;
     display:inline-block;
-    vertical-align: middle;
 }
 
 #map {
@@ -612,7 +612,6 @@ a:focus {
     padding-left: 0;
     margin-left: 0;
     display:inline-block;
-    vertical-align: middle;
 }
 
 #map {
@@ -704,7 +703,7 @@ body {
 }
 #picfooter .picture-footer img {
     /** max-width: 200px; **/
-    max-height: 100px;
+    max-height: 50px;
     margin: 20px auto;
 }
 .picture-footer ul {
