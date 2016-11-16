@@ -71,10 +71,10 @@
 
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text">
-                        <h1><strong>3MT®: Innovation Challenges</strong> online audtion</h1>
+                        <h1><strong>3MT®: Innovation Challenges</strong> online audition</h1>
                         <div class="description">
                        	    <p>
-                                If you're ready! Read our Terms & Conditions and fill out this form :)
+                                If you're ready! Let's fill out this form
                             </p>
                         </div>
                     </div>
@@ -82,10 +82,10 @@
 
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
-                    	<form role="form" action="" method="post" class="f1">
+                    	<form role="form" action="" method="post" class="f1" id="register-form">
 
-                    		<h3>Register To Our App</h3>
-                    		<p>Fill in the form to get instant access</p>
+                    		<h3>Register To 3MT: Innovation Challenges</h3>
+                    		<p>Fill in the form to join the competition</p>
                     		<div class="f1-steps">
                     			<div class="f1-progress">
                     			    <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
@@ -108,49 +108,49 @@
                     		    <h4>Tell us who you are:</h4>
                     			<div class="form-group">
                     			    <label class="sr-only" for="f1-first-name">First name</label>
-                                    <input type="text" name="f1-first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name">
+                                    <input required type="text" name="f1-first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name" maxlength="200">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-last-name">Last name</label>
-                                    <input type="text" name="f1-last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name">
+                                    <input required type="text" name="f1-last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name" maxlength="200">
                                 </div>
                                 <div class="form-group">
                                     <lable class="sr-only" for="f1-student-id">Student ID</lable>
-                                    <input type="text" name="f1-student-id" placeholder="Student Number..." class="f1-student-id form-control" id="f1-student-id">
+                                    <input required type="text" name="f1-student-id" placeholder="Student ID..." class="f1-student-id form-control" id="f1-student-id" maxlength="10">
                                 </div>
 
                                 <div class="form-group">
-                                  <select class="form-control f1-select">
-                                    <option>Faculty of Allied Health Sciences</option>
-                                    <option><a href="#">Faculty of Architecture</a></option>
-                                    <option><a href="#">Faculty of Arts</a></option>
-                                    <option><a href="#">Faculty of Commerce and Accountancy</a></option>
-                                    <option><a href="#">Faculty of Communication Arts</a></option>
-                                    <option><a href="#">Faculty of Dentistry</a></option>
-                                    <option><a href="#">Faculty of Economics</a></option>
-                                    <option><a href="#">Faculty of Education</a></option>
-                                    <option><a href="#">Faculty of Engineering</a></option>
-                                    <option><a href="#">Faculty of Fine and Applied Arts</a></option>
-                                    <option><a href="#">Faculty of Law</a></option>
-                                    <option><a href="#">Faculty of Medicine</a></option>
-                                    <option><a href="#">Faculty of Nursing</a></option>
-                                    <loption><a href="#">Faculty of Phamaceutical Sciences</a></option>
-                                    <option><a href="#">Faculty of Political Science</a></option>
-                                    <option><a href="#">Faculty of Psychology</a></option>
-                                    <option><a href="#">Faculty of Science</a></option>
-                                    <option><a href="#">Faculty of Sport Science</a></option>
-                                    <option><a href="#">Faculty of Veterinary Science</a></option>
-                                    <option><a href="#">College of Population Studies</a></option>
-                                    <option><a href="#">College of Public Health Sciences</a></option>
-                                    <option><a href="#">Sasin Graduate Institute of Business Administration</a></option>
-                                    <option><a href="#">The Petroleum and Petrochemical College</a></option>
-                                    <option><a href="#">Interdisciplinary Programs Graduate School</a></option>
+                                  <select class="form-control f1-select" name="f1-faculty" id="f1-faculty">
+                                    <option value="Faculty of Allied Health Sciences">Faculty of Allied Health Sciences</option>
+                                    <option value="Faculty of Architecture"><a href="#">Faculty of Architecture</a></option>
+                                    <option value="Faculty of Arts"><a href="#">Faculty of Arts</a></option>
+                                    <option value="Faculty of Commerce and Accountancy"><a href="#">Faculty of Commerce and Accountancy</a></option>
+                                    <option value="Faculty of Communication Arts"><a href="#">Faculty of Communication Arts</a></option>
+                                    <option value="Faculty of Dentistry"><a href="#">Faculty of Dentistry</a></option>
+                                    <option value="Faculty of Economics"><a href="#">Faculty of Economics</a></option>
+                                    <option value="Faculty of Education"><a href="#">Faculty of Education</a></option>
+                                    <option value="Faculty of Engineering"><a href="#">Faculty of Engineering</a></option>
+                                    <option value="Faculty of Fine and Applied Arts"><a href="#">Faculty of Fine and Applied Arts</a></option>
+                                    <option value="Faculty of Law"><a href="#">Faculty of Law</a></option>
+                                    <option value="Faculty of Medicine"><a href="#">Faculty of Medicine</a></option>
+                                    <option value="Faculty of Nursing"><a href="#">Faculty of Nursing</a></option>
+                                    <option value="Faculty of Phamaceutical Sciences"><a href="#">Faculty of Phamaceutical Sciences</a></option>
+                                    <option value="Faculty of Political Science"><a href="#">Faculty of Political Science</a></option>
+                                    <option value="Faculty of Psychology"><a href="#">Faculty of Psychology</a></option>
+                                    <option value="Faculty of Science"><a href="#">Faculty of Science</a></option>
+                                    <option value="Faculty of Sport Science"><a href="#">Faculty of Sport Science</a></option>
+                                    <option value="Faculty of Veterinary Science"><a href="#">Faculty of Veterinary Science</a></option>
+                                    <option value="College of Population Studies"><a href="#">College of Population Studies</a></option>
+                                    <option value="College of Public Health"><a href="#">College of Public Health Sciences</a></option>
+                                    <option value="Sasin Graduate Institute of Business"><a href="#">Sasin Graduate Institute of Business Administration</a></option>
+                                    <option value="The Petroleum and Petrochemical College"><a href="#">The Petroleum and Petrochemical College</a></option>
+                                    <option value="Interdisciplinary Programs Graduate School"><a href="#">Interdisciplinary Programs Graduate School</a></option>
                                   </select>
                                 </div>
 
                                 <div class="form-group">
                                     <lable class="sr-only" for="f1-field-of-study">Field of Study</lable>
-                                    <input type="text" name="f1-field-of-study" placeholder="Field of Study" class="f1-field-of-study form-control" id="f1-field-of-study">
+                                    <input required type="text" name="f1-field-of-study" placeholder="Field of Study" class="f1-field-of-study form-control" id="f1-field-of-study" maxlength="200">
                                 </div>
                                 <div class="f1-buttons">
                                     <button type="button" class="btn btn-next">Next</button>
@@ -161,11 +161,11 @@
                                 <h4>How we contact you:</h4>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-email">Email</label>
-                                    <input type="text" name="f1-email" placeholder="Email..." class="f1-email form-control" id="f1-email">
+                                    <input required type="text" name="f1-email" placeholder="Email..." class="f1-email form-control" id="f1-email" maxlength="200">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-phone">Phone Number</label>
-                                    <input type="text" name="f1-phone" placeholder="Phone Number..." class="f1-phone form-control" id="f1-phone">
+                                    <input required type="text" name="f1-phone" placeholder="Phone Number..." class="f1-phone form-control" id="f1-phone" maxlength="15">
                                 </div>
                                 <div class="f1-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
@@ -177,19 +177,23 @@
                                 <h4>How about your thesis:</h4>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-topic">Topic</label>
-                                    <input type="text" name="f1-topic" placeholder="Thesis Topic... (In English)" class="f1-topic form-control" id="f1-topic">
+                                    <input required type="text" name="f1-topic" placeholder="Thesis Topic... (In English)" class="f1-topic form-control" id="f1-topic" maxlength="500">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-advisor">YouTube</label>
-                                    <input type="text" name="f1-advisor" placeholder="Your Advisor..." class="f1-advisor form-control" id="f1-advisor">
+                                    <input required type="text" name="f1-advisor" placeholder="Your Advisor..." class="f1-advisor form-control" id="f1-advisor" maxlength="200">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-abstract">Abstract</label>
-                                    <textarea name="f1-abstract" placeholder="Abstract..." class="f1-abstract form-control" id="f1-abstract"></textarea>
+                                    <textarea name="f1-abstract" placeholder="Abstract..." class="f1-abstract form-control" id="f1-abstract" maxlength="10000"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-graduate">Topic</label>
+                                    <input required type="number" name="f1-graduate" placeholder="Expected Year of Graduation in A.D." class="f1-graduate form-control" id="f1-graduate" max="2030" min="2016">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-youtube">YouTube</label>
-                                    <input type="text" name="f1-youtube" placeholder="Your YouTube Presentation..." class="f1-youtube form-control" id="f1-youtube">
+                                    <input required type="text" name="f1-youtube" placeholder="Your YouTube Presentation" class="f1-youtube form-control" id="f1-youtube" maxlength="100">
                                 </div>
                                 <div class="f1-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
@@ -211,6 +215,31 @@
         <script src="../vendor/jquery/jquery.backstretch.min.js"></script>
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+
+        <script type="text/javascript">
+            window.history.forward(-1);
+            $( "#register-form" ).on( "submit", function( event ) {
+                event.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: '../controller/inputController.php',
+                    data: $("#register-form").serialize(),
+                    success: function(response) {
+
+                        if(response.return_code == 1){
+                            var completeUrl = 'complete.php?id='+response.id;
+                            window.location.assign(completeUrl);
+                        }
+                        else if(response.return_code == 2){
+                            alert("ไม่สามารถบันทึกข้อมูลได้ กรุณาลองอีกครั้ง");
+                        }
+                        else if(response.return_code == 3){
+                            alert("กรอกข้อมูลไม่ครบ กรุณาตรวจสอบข้อมูลที่กรอก");
+                        }
+                    }
+                });
+            });
+        </script>
 
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
