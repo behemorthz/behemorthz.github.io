@@ -1,5 +1,6 @@
 <?php 
 	header('Content-Type: application/json');
+    
 	if(isset($_POST)){
 		if(array_key_exists('f1-first-name',$_POST) &&
 			array_key_exists('f1-last-name',$_POST) &&
@@ -16,12 +17,14 @@
 
 			include 'saveToDB.php';
 			$isSave = saveToDB($_POST);
-			if($isSave['return_code'] == 1){
-				echo json_encode($isSave);
-			}
-			else if($isSave['return_code'] == 2) {
-				echo json_encode($isSave);
-			}
+            echo json_encode($isSave);
+            die();
+//			if($isSave['return_code'] == 1){
+//				echo json_encode($isSave);
+//			}
+//			else if($isSave['return_code'] == 2) {
+//				echo json_encode($isSave);
+//			}
 
 		}
 		else if($isSave['return_code'] == 3){
@@ -29,4 +32,5 @@
 		}
 		
 	}
+    die();
  ?>

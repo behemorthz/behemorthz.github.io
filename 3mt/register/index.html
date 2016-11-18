@@ -16,14 +16,13 @@
         <link rel="stylesheet" href="../css/style.css">
 
 
-                <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+       
 
         <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/i18n/defaults-*.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/i18n/defaults-*.min.js"></script>-->
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -215,7 +214,8 @@
         <script src="../vendor/jquery/jquery.backstretch.min.js"></script>
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/scripts.js"></script>
-
+         <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
         <script type="text/javascript">
             window.history.forward(-1);
             $( "#register-form" ).on( "submit", function( event ) {
@@ -224,18 +224,22 @@
                     type: "POST",
                     url: '../controller/inputController.php',
                     data: $("#register-form").serialize(),
+                    error: function(e){
+                      console.log(e);  
+                    },
                     success: function(response) {
-
-                        if(response.return_code == 1){
-                            var completeUrl = 'complete.php?id='+response.id;
-                            window.location.assign(completeUrl);
-                        }
-                        else if(response.return_code == 2){
-                            alert("ไม่สามารถบันทึกข้อมูลได้ กรุณาลองอีกครั้ง");
-                        }
-                        else if(response.return_code == 3){
-                            alert("กรอกข้อมูลไม่ครบ กรุณาตรวจสอบข้อมูลที่กรอก");
-                        }
+                        console.log(response);
+//                        return;
+//                        if(response.return_code == 1){
+//                            var completeUrl = 'complete.php?id='+response.id;
+//                            window.location.assign(completeUrl);
+//                        }
+//                        else if(response.return_code == 2){
+//                            alert("ไม่สามารถบันทึกข้อมูลได้ กรุณาลองอีกครั้ง");
+//                        }
+//                        else if(response.return_code == 3){
+//                            alert("กรอกข้อมูลไม่ครบ กรุณาตรวจสอบข้อมูลที่กรอก");
+//                        }
                     }
                 });
             });

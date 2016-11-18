@@ -36,7 +36,7 @@ function saveToDB($competitorData){
 	}
 	else {
 		$conn->close();
-		return array('return_code' => 3,'id' => null);
+		return array('return_code' => 3,'id' => null, 'error' => $conn->connect_error);
 	}
 }
 
