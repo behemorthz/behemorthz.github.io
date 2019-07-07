@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<basecode><con><line id="1" trace="false"/><code>byte turn[2];
+</code></con><con><line id="2" trace="false"/><code>byte mutex;
+</code></con><con><line id="3" trace="false"/><code>init{
+</code></con><con><line id="4" trace="false"/><code>atomic{</code></con><con><line id="5" trace="false"/><code>run P(0);</code></con><con><line id="6" trace="false"/><code>proctype P(bit i){
+</code></con><con><line id="7" trace="false"/><code>    do
+</code></con><con><line id="8" trace="false"/><code>    ::  turn[i] = 1;
+</code></con><con><line id="9" trace="false"/><code>        turn[i] = turn[1-i]+1;
+</code></con><con><line id="10" trace="false"/><code>        (turn[1-i]==0)||(turn[i]&lt;turn[1-i]);
+</code></con><con><line id="11" trace="false"/><code>        mutex++;
+</code></con><con><line id="12" trace="false"/><code>        printf("MSC: P(%d) has entered section.\n", i);
+</code></con><con><line id="13" trace="false"/><code>        mutex--;
+</code></con><con><line id="14" trace="false"/><code>        turn[i]=0;
+</code></con><con><line id="15" trace="false"/><code>    od
+</code></con><con><line id="16" trace="false"/><code>run P(1);</code></con><con><line id="17" trace="false"/><code>proctype P(bit i){
+</code></con><con><line id="18" trace="false"/><code>    do
+</code></con><con><line id="19" trace="false"/><code>    ::  turn[i] = 1;
+</code></con><con><line id="20" trace="false"/><code>        turn[i] = turn[1-i]+1;
+</code></con><con><line id="21" trace="false"/><code>        (turn[1-i]==0)||(turn[i]&lt;turn[1-i]);
+</code></con><con><line id="22" trace="false"/><code>        mutex++;
+</code></con><con><line id="23" trace="false"/><code>        printf("MSC: P(%d) has entered section.\n", i);
+</code></con><con><line id="24" trace="false"/><code>        mutex--;
+</code></con><con><line id="25" trace="false"/><code>        turn[i]=0;
+</code></con><con><line id="26" trace="false"/><code>    od
+</code></con><con><line id="27" trace="false"/><code>run monitor();</code></con><con><line id="28" trace="false"/><code>proctype monitor(){
+</code></con><con><line id="29" trace="false"/><code>    assert(mutex != 2);
+</code></con></basecode>
